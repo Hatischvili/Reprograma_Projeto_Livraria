@@ -10,7 +10,6 @@ const bookDatabase = require('./database')
 
 const inputAnswer = require('readline-sync')
 
-
 const welcome = inputAnswer.question('Gostaria de ver as categorias de livros?(S/N)').toLocaleLowerCase()
 
 if(welcome === 's'){
@@ -40,8 +39,6 @@ if(welcome === 's'){
         console.table(tableWish)
     
     }
-
-
 
 }else
 console.log("------------------------------")
