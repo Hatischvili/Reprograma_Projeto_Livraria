@@ -14,7 +14,7 @@ const welcome = inputAnswer.question('Gostaria de ver as categorias de livros?(S
 
 if(welcome === 's'){
     
-    const answerBookCategory = inputAnswer.question('Qual categoria de livro voce gostaria de ver?').toLocaleLowerCase()
+    const answerBookCategory = inputAnswer.question('Gostaria de ver qual categoria de livro?').toLocaleLowerCase()
 
     genre = (bookDatabase) => bookDatabase.categoria === answerBookCategory 
     const tableGenre = bookDatabase.filter(genre)
@@ -40,7 +40,12 @@ if(welcome === 's'){
     
     }
 
-}else
+    console.log("------------------------------")
+    console.log("-----Volte quando quiser!-----")
+    console.log("------------------------------")
+
+}else{
 console.log("------------------------------")
 console.log("-----Volte quando quiser!-----")
 console.log("------------------------------")
+}
